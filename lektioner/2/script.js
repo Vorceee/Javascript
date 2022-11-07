@@ -1,0 +1,1 @@
+document.getElementById("header").innerHTML = "Lektion 2";
