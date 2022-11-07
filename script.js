@@ -12,4 +12,4 @@ if (name != "") {
 function myfuntion() {
     
     document.getElementById("demo").innerHTML = name;
-}
+} //felix
