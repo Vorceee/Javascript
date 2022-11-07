@@ -6,12 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="testing.css">
     
 </head>
 <body>
-    <h1 id="header"></h1>
+    <div class="page" id="page">
+        <h1 id="header"></h1>
 
-    <p id="text"></p>
+        <p id="text"></p>
+
+        <button class="no-display" id="button-1" onclick="myFunction()">EN liten knapp</button>
+        <button id="button-2" onclick="smallFunction()">Klick ME!</button>
+        <input class="no-display" id="input">
+        <button class="no-display" id="button-4" onclick="buttonFunction()">submit</button>
+
+        <div id="colorDiv"></div>
+        <button id="button-3" class="no-display" onclick="stop()">STOP! </button>
+    </div>
     
     <script src="script.js"></script>
 </body>
