@@ -11,8 +11,10 @@
 
     <h1>Hello!</h1><hr>
     <h2>array functions</h2>
-    <button onclick="arrayLoop(messages)">Loop</button>
+    <button onclick="arrayLoop(messages, 1)">Loop (for)</button>
+    <button onclick="arrayLoop(messages, 0)">Loop (while)</button><br>
     <button onclick="arrayRandom(messages)">Random</button>
+    <p id="loop"></p>
     <hr>
     <h2>array advancements</h2>
     <input id="input" value=""><button onclick="arrayToString(messages)">Submit</button>

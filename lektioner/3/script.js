@@ -1,10 +1,23 @@
 const messages = ['Hello Friend','Hello','Whats going on','Sup matey!'];
 
 
-function arrayLoop(array) {
-    for (let i = 0; i < array.length; i++) {
-        alert(array[i]);  
+function arrayLoop(array, selector) {
+    if (selector == 1) {
+        array.push("enn wfor loop användes")
+        for (let i = 0; i < array.length; i++) {
+            alert(array[i]);
+            document.getElementById('loop').innerHTML = array[i]
+        }
+    } else {
+        let i = 0;
+        array.push("enn while loop användes")
+        while (i < array.length) {
+            alert(array[i])
+            document.getElementById('loop').innerHTML = array[i]
+            i++
+        }
     }
+   
 }
 function arrayRandom(array) {
     const random = Math.floor(Math.random() * (array.length + 1));
