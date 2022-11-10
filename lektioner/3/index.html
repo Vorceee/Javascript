@@ -17,8 +17,32 @@
     <h2>array advancements</h2>
     <input id="input" value=""><button onclick="arrayToString(messages)">Submit</button>
     <p id="text"></p>
+    <hr>
+    <h2>Classes</h2>
+    <input id="name" placeholder="name" required>
+    <input id="year" placeholder="year" required>
+    <br>
+    <button onclick="makeCar()">Make a car</button>
+    <p id="carText"></p>
+    <hr>
+    <h2>advanced class functions</h2>
+    <input id="catName" placeholder="name" required> <br>
+    <input id="catColor" placeholder="color" required> <br>
+    <input id="catYear" placeholder="year" required>
+    <br>
+    <button onclick="makeCat()">Make a cat</button>
+    <p id="catText"></p>
+    <hr>
+    <h3>message board</h3>
+    <p id="message"></p>
     
 
     <script src="script.js"></script>
+    <script type="module">
+        import message from "./message.js";
+
+        document.getElementById("message").innerHTML = message();
+    </script>
+    
 </body>
 </html>
