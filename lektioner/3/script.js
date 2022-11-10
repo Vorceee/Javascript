@@ -97,3 +97,13 @@ let timeArr = time.split(":");
 
 console.log(`hours:${timeArr[0]}, minutes:${timeArr[1]}, seconds:${timeArr[2]}`)
 
+const fruit = [
+    {name: "apple", color: "red", taste: "sweet"},
+    {name: "apple", color: "green", taste: "sour"},
+    {name: "lemon", color: "yellow", taste: "sour"}
+]
+for (let i = 0; i < fruit.length; i++) {
+    console.log(`name ${fruit[i].name}, color ${fruit[i].color}, taste ${fruit[i].taste}`);
+    
+}
+
