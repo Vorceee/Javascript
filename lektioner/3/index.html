@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <h1>Hello!</h1><hr>
+    <h2>array functions</h2>
+    <button onclick="arrayLoop(messages, 1)">Loop (for)</button>
+    <button onclick="arrayLoop(messages, 0)">Loop (while)</button><br>
+    <button onclick="arrayRandom(messages)">Random</button>
+    <p id="loop"></p>
+    <hr>
+    <h2>array advancements</h2>
+    <input id="input" value=""><button onclick="arrayToString(messages)">Submit</button>
+    <p id="text"></p>
+    <hr>
+    <h2>Classes</h2>
+    <input id="name" placeholder="name" required>
+    <input id="year" placeholder="year" required>
+    <br>
+    <button onclick="makeCar()">Make a car</button>
+    <p id="carText"></p>
+    <hr>
+    <h2>advanced class functions</h2>
+    <input id="catName" placeholder="name" required> <br>
+    <input id="catColor" placeholder="color" required> <br>
+    <input id="catYear" placeholder="year" required>
+    <br>
+    <button onclick="makeCat()">Make a cat</button>
+    <p id="catText"></p>
+    <hr>
+    <h2>message board</h2>
+    <p id="message"></p>
+    <script type="module">
+        import message from "./message.js";
+
+        document.getElementById("message").innerHTML = message();
+    </script>
+    <hr>
+    <h2>array maker</h2>
+    <button onclick="arrayMaker()">make array</button>
+    
+
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
