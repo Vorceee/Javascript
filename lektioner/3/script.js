@@ -73,4 +73,27 @@ function makeCat(){
     document.getElementById("catText").innerHTML = "your new cat is called " + cat.name + ". It is " + cat.age() + " years old. It is colored " + cat.color;
 }
 
+function arrayMaker() {
+    let arrayOdd = [];
+    let arrayEven = [];
+
+    for (let i = 0; i < 101; i++) {
+        if (i%2 == 1) {
+            arrayOdd.push(i);
+        } else if ( i%2 == 0) {
+            arrayEven.push(i);
+        }
+    }
+    for (let i = 0; i < arrayOdd.length; i++) {
+        console.log("odd", arrayOdd[i]);
+    }
+    for (let i = 0; i < arrayEven.length; i++) {
+        console.log("even:", arrayEven[i]);
+    }
+}
+
+let time = "12:45:13";
+let timeArr = time.split(":");
+
+console.log(`hours:${timeArr[0]}, minutes:${timeArr[1]}, seconds:${timeArr[2]}`)
 
